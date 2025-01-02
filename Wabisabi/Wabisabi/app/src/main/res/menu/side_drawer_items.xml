@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/sdrawer_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile"
+            android:titleTextColor="@color/icon_color"
+            />
+        <item
+            android:id="@+id/sdrawer_bookmarks"
+            android:icon="@drawable/bookmark_outlined_icon"
+            android:title="Bookmarks"
+            android:titleTextColor="@color/icon_color"
+            />
+       <!-- <item
+            android:id="@+id/sdrawer_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings"
+            android:titleTextColor="@color/icon_color"
+        />-->
+    </group>
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wabisabi</string>
+    <string name="see_more"><u>see more</u></string>
+    <string name="save_to_bookmarks"><u>Save to bookmarks</u></string>
+</resources>

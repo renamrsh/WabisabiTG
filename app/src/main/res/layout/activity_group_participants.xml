@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="Activity.GroupParticipantsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="33dp"
+                android:background="@drawable/left_arrow_icon"
+                android:onClick="onButtonBack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:civ_border_color="@color/online"
+                android:id="@+id/statusOnline"
+                android:layout_marginStart="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/profile_iv"
+                app:layout_constraintEnd_toEndOf="@id/profile_iv"
+                app:civ_border_width="10dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/statusOffline"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/offilne"
+                app:civ_border_width="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/profile_iv"
+                app:layout_constraintEnd_toEndOf="@id/profile_iv" />-->
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="33dp"
+                android:paddingEnd="33dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/usersRvParticipants"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/row_participants_add"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

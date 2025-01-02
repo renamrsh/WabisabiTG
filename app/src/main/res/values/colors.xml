@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#061232</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#ffffff</color>
+    
+    <color name="accent_color">#20305E</color>
+    <color name="green">#8BB857</color><!--4D7C35-->
+
+    <color name="online">#06CC27</color>
+    <color name="offilne">#AC6F6F</color><!--#bfbfbf-->
+
+    <color name="big_text">#0B1C4C</color><!-- big text on the beginning -->
+    <color name="small_text">#000000</color><!-- all text -->
+
+    <color name="second_font">#E6E6E6</color><!-- search behind -->
+    <color name="second_font_sign">#CCCDCF</color><!-- sing behind -->
+
+    <color name="message_color">#BEBDDA</color>
+    <color name="button_color">#203570</color>
+    <color name="icon_color">#061232</color>
+    <color name="bottom_icon_color">#FFFFFF</color>
+
+
+    <color name="details">#E288B857</color><!--#B4FF88AA-->
+
+    <color name="elements_background">#20305E</color>
+    <color name="viewholders_background">#EBE7E5</color>
+    <color name="viewholders_info_details">#F6F5F5</color>
+    <color name="side_menu_background">#E6E6E9F1</color>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_iv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/groupTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toTopOf="@id/profile_iv"
+        app:layout_constraintStart_toEndOf="@id/profile_iv"
+
+        tools:text="Group Title" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Sender Name"
+
+
+        app:layout_constraintStart_toStartOf="@id/groupTitle_tv"
+        app:layout_constraintTop_toBottomOf="@id/groupTitle_tv"
+         />
+    <TextView
+        android:id="@+id/messageGroupTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:textColor="@color/black"
+        android:text="The Message"
+android:layout_marginLeft="4dp"
+        app:layout_constraintStart_toEndOf="@id/nameTv"
+        app:layout_constraintTop_toBottomOf="@id/groupTitle_tv"
+        />
+
+
+    <TextView
+        android:id="@+id/TimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="The Message"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/profile_iv"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

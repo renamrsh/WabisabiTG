@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1028003326883",
+    "firebase_url": "https://healthapphelper-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "healthapphelper",
+    "storage_bucket": "healthapphelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028003326883:android:49091949a0a295cf4e8816",
+        "android_client_info": {
+          "package_name": "com.example.healthapphelper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx8HZCZFAdWZYe4pDBSR1lHXzGnor1Fkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028003326883:android:204dcf5e36cb8dce4e8816",
+        "android_client_info": {
+          "package_name": "com.example.wabisabi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx8HZCZFAdWZYe4pDBSR1lHXzGnor1Fkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

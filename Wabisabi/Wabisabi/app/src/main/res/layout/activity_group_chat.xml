@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="Activity.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="33dp"
+                android:background="@drawable/left_arrow_icon"
+                android:onClick="onButtonBack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/groupNew_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/frog_color_front"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/buttonBack"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:civ_border_color="@color/online"
+                android:id="@+id/statusOnline"
+                android:layout_marginStart="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/profile_iv"
+                app:layout_constraintEnd_toEndOf="@id/profile_iv"
+                app:civ_border_width="10dp"
+                android:src="@mipmap/ic_launcher"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/statusOffline"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="@color/offilne"
+                app:civ_border_width="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/profile_iv"
+                app:layout_constraintEnd_toEndOf="@id/profile_iv" />-->
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@+id/groupNew_iv"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textViewGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- <TextView
+                     android:id="@+id/user_role_status_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="sans-serif"
+                     android:text="Status"
+                     android:textColor="@color/black"
+                     android:textSize="12sp"
+                     app:layout_constraintBottom_toBottomOf="parent"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@+id/usernameChatTv" />-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--<ImageButton
+                android:id="@+id/buttonDrawerToggle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="33dp"
+                android:background="@drawable/three_dot_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--<Button
+                android:textColor="@color/white"
+                android:id="@+id/btnLeaveGroup"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="1dp"
+                android:layout_margin="33dp"
+               android:onClick="onDeleteClick"
+                android:text="Leave \ngroup"
+                android:textSize="10dp"
+                android:backgroundTint="@color/button_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               />-->
+
+            <ImageButton
+                android:id="@+id/add_participants_togroup"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_marginEnd="33dp"
+                android:hint="e.g 5"
+                android:src="@drawable/baseline_group_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="We're currently working on adding the ability to write in chats. Thank you for your understanding!"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/chatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@drawable/b_type_message_background"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/attachBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="e.g 5"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:src="@drawable/baseline_attach_file_24"/>
+
+
+            <EditText
+                android:id="@+id/messageEt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/message_et_shape"
+                android:hint="Type your message..."
+                android:padding="8dp"
+                app:theme="@style/CustomInputView" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_send_24"
+            android:background="@null"
+            android:hint="e.g 5"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:id="@+id/sendBtn" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
